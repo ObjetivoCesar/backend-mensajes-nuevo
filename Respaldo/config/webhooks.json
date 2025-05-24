@@ -1,0 +1,17 @@
+{
+  "chatbot-3": {
+    "webhook": "https://hook.us2.make.com/r9mihhm8gdc8paeydfnmw2wwvn7c9p5q",
+    "name": "Energym",
+    "description": "Asistente de Energym"
+  },
+  "sara-topdent": {
+    "webhook": "https://hook.us2.make.com/uv54rz61icbhw1colpy1xgpbrgoyjoda",
+    "name": "Sara",
+    "description": "Asistente de Topdent"
+  },
+  "chatbot-objetivo": {
+    "webhook": "",
+    "name": "Ale",
+    "description": "Asistente de Objetivo"
+  }
+}
