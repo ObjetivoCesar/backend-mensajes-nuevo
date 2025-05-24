@@ -227,9 +227,10 @@ app.use((err, req, res, next) => {
 
 // Iniciar servidor
 app.listen(PORT, () => {
+  const publicUrl = process.env.PUBLIC_URL || `http://localhost:${PORT}`;
   logger.info(`Servidor iniciado en puerto ${PORT}`);
-  logger.info(`Widget de chat disponible en: http://localhost:${PORT}/widget`);
-  logger.info(`API disponible en: http://localhost:${PORT}/api`);
+  logger.info(`Widget de chat disponible en: ${publicUrl}/widget`);
+  logger.info(`API disponible en: ${publicUrl}/api`);
 });
 
 module.exports = app;
