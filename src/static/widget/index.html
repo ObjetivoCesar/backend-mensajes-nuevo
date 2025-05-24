@@ -290,13 +290,13 @@
         (function() {
             // Configuración del widget
             const widgetConfig = {
-                chatbotId: 'default-chatbot', // ID del chatbot (debe ser configurado)
-                apiUrl: 'http://localhost:3000/api', // URL de la API (debe ser configurado)
+                chatbotId: 'chatbot-3', // ID de Energym
+                apiUrl: 'https://backend-mensajes-nuevo.onrender.com/api', // OJO: termina en /api para las rutas del backend
                 userId: 'user_' + Math.random().toString(36).substring(2, 15), // ID de usuario aleatorio
                 conversationId: 'conv_' + Math.random().toString(36).substring(2, 15), // ID de conversación aleatorio
-                title: 'Chat de Asistencia', // Título del widget
-                primaryColor: '#4a86e8', // Color primario
-                welcomeMessage: '¡Hola! ¿En qué puedo ayudarte hoy?' // Mensaje de bienvenida
+                title: 'Energym Asistente',
+                primaryColor: '#27ae60',
+                welcomeMessage: '¡Hola! Soy el asistente de Energym, ¿en qué puedo ayudarte?'
             };
 
             // Elementos del DOM
@@ -643,5 +643,17 @@
             };
         })();
     </script>
+
+    <script>
+    window.ChatWidgetConfig = {
+        chatbotId: 'chatbot-3', // ID de Energym
+        apiUrl: 'https://backend-mensajes-nuevo.onrender.com/api', // OJO: termina en /api para las rutas del backend
+        title: 'Energym Asistente',
+        primaryColor: '#27ae60',
+        welcomeMessage: '¡Hola! Soy el asistente de Energym, ¿en qué puedo ayudarte?'
+    };
+    </script>
+    <script src="https://backend-mensajes-nuevo.onrender.com/widget/widget-loader.js"></script>
+    <div id="chat-widget"></div>
 </body>
 </html>

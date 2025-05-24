@@ -27,7 +27,7 @@ const upload = multer({
 });
 
 // Middleware
-app.use(cors());
+app.use(cors({ origin: '*' }));
 app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
